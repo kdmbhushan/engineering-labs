@@ -1,0 +1,32 @@
+<Solution>
+  <Folder Name="/azure/" />
+  <Folder Name="/azure/docker-container-apps/">
+    <Project Path="azure/docker-container-apps/DockerContainerApps.csproj" />
+  </Folder>
+  <Folder Name="/data/" />
+  <Folder Name="/data/linq-internals/">
+    <Project Path="data/linq-internals/LinqInternals.csproj" />
+  </Folder>
+  <Folder Name="/dotnet/" />
+  <Folder Name="/dotnet/async-concurrency/">
+    <Project Path="dotnet/async-concurrency/AsyncConcurrency.csproj" />
+  </Folder>
+  <Folder Name="/dotnet/json-serialization/">
+    <Project Path="dotnet/json-serialization/JsonSerialization.csproj" />
+  </Folder>
+  <Folder Name="/dotnet/jwt-authentication/">
+    <Project Path="dotnet/jwt-authentication/JwtAuthentication.csproj" />
+  </Folder>
+  <Folder Name="/dotnet/memory-caching/">
+    <Project Path="dotnet/memory-caching/MemoryCaching.csproj" />
+  </Folder>
+  <Folder Name="/dotnet/options-pattern/">
+    <Project Path="dotnet/options-pattern/Configuration.csproj" />
+  </Folder>
+  <Folder Name="/dotnet/transactional-email/">
+    <Project Path="dotnet/transactional-email/SendingEmail.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EngineeringLabs.Tests/EngineeringLabs.Tests.csproj" />
+  </Folder>
+</Solution>

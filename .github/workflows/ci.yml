@@ -1,0 +1,32 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+    - name: Checkout Source Code
+      uses: actions/checkout@v4
+
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: |
+          8.0.x
+          9.0.x
+
+    - name: Restore NuGet Dependencies
+      run: dotnet restore EngineeringLabs.slnx
+
+    - name: Build Solution
+      run: dotnet build EngineeringLabs.slnx --configuration Release --no-restore
+
+    - name: Execute Automated Tests
+      run: dotnet test EngineeringLabs.slnx --configuration Release --no-build --verbosity normal
